@@ -12,15 +12,13 @@
 	// Utils
 
 	// Components
-	import HeadTags from '$components/head-tags/HeadTags.svelte';
 	import BlogPost from '$components/blog-post/BlogPost.svelte';
+	import HeadTags from '$components/head-tags/HeadTags.svelte';
 	import ProjectCard from '$components/project-card/ProjectCard.svelte';
-
-	// Models
+	import ExternalLink from '$lib/shared/ui/components/external-link/ExternalLink.svelte';
+	import type { IBlogPostSummary } from '$models/interfaces/iblog-post-summary.interface';
 	import type { IMetaTagProperties } from '$models/interfaces/imeta-tag-properties.interface';
 	import type { IProjectCard } from '$models/interfaces/iproject-card.interface';
-	import type { IBlogPostSummary } from '$models/interfaces/iblog-post-summary.interface';
-	import ExternalLink from '$lib/shared/ui/components/external-link/ExternalLink.svelte';
 	// End: Local Imports
 
 	// Exports
@@ -110,11 +108,12 @@
 	<!-- Start: Top Projects -->
 	<h2 class="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white"> Top Projects </h2>
 
-	{#if projects.length > 0}
-		{#each projects as project}
-			<ProjectCard project="{project}" />
-		{/each}
-	{/if}
+	{#each projects as project}
+		<ProjectCard project="{project}" />
+	{:else}
+		fgdf
+	{/each}
+
 	<!-- End: Top Projects -->
 </div>
 <!-- End: Home Page container -->

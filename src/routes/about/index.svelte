@@ -1,5 +1,8 @@
 <script lang="ts" context="module">
 	import { browser, dev } from '$app/env';
+	import HeadTags from '$components/head-tags/HeadTags.svelte';
+	import type { IMetaTagProperties } from '$models/interfaces/imeta-tag-properties.interface';
+	import ExternalLink from '$ui/components/external-link/ExternalLink.svelte';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -17,11 +20,6 @@
 <script lang="ts">
 	// Start: Local Imports
 	// Components
-	import HeadTags from '$components/head-tags/HeadTags.svelte';
-	import ExternalLink from '$ui/components/external-link/ExternalLink.svelte';
-
-	// Models
-	import type { IMetaTagProperties } from '$models/interfaces/imeta-tag-properties.interface';
 	// End: Local Imports
 
 	// Start: Local component properties
