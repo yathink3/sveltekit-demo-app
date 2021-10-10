@@ -19,7 +19,6 @@ The project has the **_SSR (Server Side Rendering)_** setup. These template is e
 
 -   :bulb: [Features](#bulb-features)
 -   :hammer: [Project Setup](#hammer-project-setup)
--   :bug: [Known Bugs](https://github.com/navneetsharmaui/sveltekit-starter/issues)
 
 ## :bulb: Features
 
